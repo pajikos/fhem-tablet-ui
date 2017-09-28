@@ -21,84 +21,101 @@
     -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
+
     <!-- define your personal style here, it wont be overwritten  -->
     <!-- link rel="stylesheet" href="css/fhem-green-ui.css" / -->
     <!-- link rel="stylesheet" href="css/fhem-tablet-ui-user.css" / -->
 
     <script src="js/fhem-tablet-ui.js" defer></script>
 
-
-    <!-- Remove this line to enable for usage with WebViewControl
-    <script defer>var wvcDevices = {'12345': 'Tablet'}; var wvcUserCssFile="webviewcontrol.css"</script>
-    <script src="../pgm2/cordova-2.3.0.js" defer></script>
-    <script src="../pgm2/webviewcontrol.js" defer></script>
-    <!-- End for WebViewControl -->
-
     <title>FHEM-Tablet-UI</title>
 </head>
 
 <body>
-
     <div class="gridster">
         <ul>
-            <li data-row="1" data-col="1" data-sizey="1" data-sizex="1">
-                <header>TREND</header>
-                <div class="sheet">
-                    <div class="row">
-                        <div class="cell">
-                          
-                        </div>
-                    </div>
+            <li data-row="1" data-col="1" data-sizey="4" data-sizex="3">
+                <header>Obyvací pokoj</header>
+                <div data-type="thermostat"
+                     data-device="MAX_14e20e"
+                     data-valve="MAX_131f32:valveposition"     
+                     data-get="desiredTemperature"     
+                     data-temp="temperature"     
+                     data-set="desiredTemperature"     
+                     data-step="0.5"     
+                     class="big"
+                     data-mode="mode"
+                     data-min="10"
+                     data-max="25">
                 </div>
             </li>
-            <li data-row="2" data-col="1" data-sizex="1" data-sizey="4">
-                <header>GARTEN</header>
-                <div class="sheet">
-                    <div class="row">
-                        <div class="cell">
-                        </div>
-                    </div>
+            <li data-row="1" data-col="4" data-sizey="4" data-sizex="3">
+                <header>Pokoj dolní</header>
+                <div data-type="thermostat"
+                     data-device="MAX_168181"
+                     data-valve="MAX_1304ef:valveposition"     
+                     data-get="desiredTemperature"     
+                     data-temp="temperature"     
+                     data-set="desiredTemperature"     
+                     data-step="0.5"     
+                     class="big"
+                     data-mode="mode"
+                     data-min="10"
+                     data-max="25">
                 </div>
             </li>
-            <li data-row="1" data-col="2" data-sizey="1" data-sizex="2">
-                <header>BAD</header>
-                <div class="sheet">
-                    <div class="row">
-                      
-                    </div>
+            <li data-row="1" data-col="7" data-sizey="4" data-sizex="3">
+                <header>Ložnice</header>
+                <div data-type="thermostat"
+                     data-device="MAX_14e1dd"
+                     data-valve="MAX_130dab:valveposition"     
+                     data-get="desiredTemperature"     
+                     data-temp="temperature"     
+                     data-set="desiredTemperature"     
+                     data-step="0.5"     
+                     class="big"
+                     data-mode="mode"
+                     data-min="10"
+                     data-max="25">
                 </div>
             </li>
-            <li data-row="1" data-col="3" data-sizey="1" data-sizex="2">
-                <header>SCHLAFZIMMER</header>
-                <div class="sheet">
-                    <div class="row">
-                        <div
-    data-type="thermostat"
-    data-device="MAX_14e20e"
-    data-valve="valveposition"
-    data-get="desiredTemperature"
-    data-temp="MAX_14e1dd:temperature"
-    data-set="desiredTemperature"
-    data-step="0.5"
-    class="big">
-</div>
-                    </div>
+            <li data-row="1" data-col="10" data-sizey="4" data-sizex="3">
+                <header>Pracovna</header>
+                <div data-type="thermostat"
+                     data-device="MAX_14ec88"
+                     data-valve="MAX_130dac:valveposition"     
+                     data-get="desiredTemperature"     
+                     data-temp="temperature"     
+                     data-set="desiredTemperature"     
+                     data-step="0.5"     
+                     class="big"
+                     data-mode="mode"
+                     data-min="10"
+                     data-max="25">
                 </div>
             </li>
-            <li data-row="1" data-col="4" data-sizey="1" data-sizex="2">
-                <header>KINDERZIMMER</header>
-              
+            <li data-row="5" data-col="1" data-sizey="3" data-sizex="3">
+                <header>Koupelna</header>
+                <div data-type="thermostat"
+                     data-device="MAX_161d33"
+                     data-valve="valveposition"     
+                     data-get="desiredTemperature"     
+                     data-temp="temperature"     
+                     data-set="desiredTemperature"     
+                     data-step="0.5"     
+                     class="big"
+                     data-mode="mode"
+                     data-min="10"
+                     data-max="25">
+                </div>
             </li>
-            <li data-row="1" data-col="8" data-sizey="1" data-sizex="1">
-              
+            <li data-row="5" data-col="4" data-sizey="3" data-sizex="6">
+                <header>EXAMPLE5</header>
+                <!-- place your widget here -->
             </li>
-            
-           
-            
-            <li data-row="2" data-col="8" data-sizey="4" data-sizex="1">
-                <header>LIGHTS</header>
-                
-
+            <li data-row="5" data-col="10" data-sizey="3" data-sizex="3">
+                <header>EXAMPLE6</header>
+                <!-- place your widget here -->
             </li>
         </ul>
     </div>
