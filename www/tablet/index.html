@@ -36,18 +36,34 @@
         <ul>
             <li data-row="1" data-col="1" data-sizey="4" data-sizex="3">
                 <header>Obyvací pokoj</header>
-                <div data-type="thermostat"
-                     data-device="MAX_14e20e"
-                     data-valve="MAX_131f32:valveposition"     
-                     data-get="desiredTemperature"     
-                     data-temp="temperature"     
-                     data-set="desiredTemperature"     
-                     data-step="0.5"     
-                     class="big"
-                     data-mode="mode"
-                     data-min="10"
-                     data-max="25">
+                <div class="sheet">
+                    <div class="row">
+                        <div class="cell" data-type="thermostat"
+                             data-device="MAX_14e20e"
+                             data-valve="MAX_131f32:valveposition"     
+                             data-get="desiredTemperature"     
+                             data-temp="temperature"     
+                             data-set="desiredTemperature"     
+                             data-step="0.5"     
+                             class="big"
+                             data-mode="mode"
+                             data-min="10"
+                             data-max="25">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell" data-type="spinner"
+                            data-device="MAX_14e20e"
+                            data-get="desiredTemperature"
+                            data-set="desiredTemperature" 
+                            data-min="10"
+                            data-max="25"
+                            data-unit="°"
+                            class="valueonly">
+                        </div>
+                    </div>
                 </div>
+                
             </li>
             <li data-row="1" data-col="4" data-sizey="4" data-sizex="3">
                 <header>Pokoj dolní</header>
